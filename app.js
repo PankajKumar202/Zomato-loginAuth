@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
 const db=require('./db');
-const port=process.env.port || 3200;
+const port=process.env.port || 6500;
 const cors=require('cors');
 app.use(cors())
 const AuthController=require('./controller/authController');
