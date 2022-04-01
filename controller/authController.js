@@ -7,6 +7,7 @@ const config=require('../config');
 const User=require('../modal/userSchema');
 router.use(bodyParser.urlencoded({extended:true}));
 router.use(bodyParser.json());
+
 // get all user
 router.get('/users',(req,res)=>{
     User.find({},(err,data)=>{
